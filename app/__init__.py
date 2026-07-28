@@ -1,0 +1,1 @@
+# ScholarAI — main application package

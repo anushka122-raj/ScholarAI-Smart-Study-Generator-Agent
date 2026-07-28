@@ -1,0 +1,14 @@
+# ── Runtime dependencies ──────────────────────────────────────────────────
+# Install with:  pip install -r requirements.txt
+
+# HTTP client — used by SearchService to call external APIs
+requests==2.32.3
+
+# Load environment variables from a .env file
+python-dotenv==1.0.1
+
+# OpenAI SDK — powers summarisation, Q&A, and embedding features
+openai==1.35.14
+
+# Data validation — useful for validating API response shapes
+pydantic==2.7.4

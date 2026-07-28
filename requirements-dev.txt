@@ -1,0 +1,19 @@
+# ── Development dependencies ──────────────────────────────────────────────
+# Install with:  pip install -r requirements-dev.txt
+# (these are NOT needed in production)
+
+# Pull in all runtime deps as well
+-r requirements.txt
+
+# Test runner
+pytest==8.2.2
+pytest-cov==5.0.0       # Coverage reporting
+
+# Linter + formatter (replaces flake8 + isort + pyupgrade)
+ruff==0.5.0
+
+# Static type checker
+mypy==1.10.1
+
+# HTTP mocking in tests (avoids real API calls)
+responses==0.25.3
