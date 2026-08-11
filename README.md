@@ -5,18 +5,43 @@
 ScholarAI lets you search, explore, and summarise academic literature using
 natural language queries — backed by the Semantic Scholar API and OpenAI.
 
----
+------------------------------------------------------------------------------------------
 
 ## Features
 
-- **Paper search** — query millions of academic papers via Semantic Scholar
-- **Smart summaries** — OpenAI-powered abstracts and Q&A over papers
-- **Keyword extraction** — automatically surfaces key topics in any paper
-- **Clean data model** — typed `Paper` dataclass with round-trip dict support
-- **Configurable** — all settings driven by environment variables
+- **Natural-language paper search** — find relevant academic papers using simple queries
+- **Academic paper discovery** — search millions of research papers through the Semantic Scholar API
+- **AI-powered summaries** — generate concise summaries of academic papers using OpenAI
+- **Keyword extraction** — identify important topics and concepts from research papers
+- **Paper-based Q&A** — ask questions and obtain AI-generated answers based on paper content
+- **Structured paper model** — represent paper metadata using a typed Python `Paper` dataclass
+- **Text processing** — clean and prepare academic text before AI processing
+- **Configurable architecture** — manage API keys and application settings through environment variables
+- **Unit testing** — test core functionality using pytest
+---------------------------------------------------------------------------------------------
 
----
+## System Architecture
 
+ScholarAI follows a simple AI-powered research pipeline:
+
+User Query
+   ↓
+Search Service
+   ↓
+Semantic Scholar API
+   ↓
+Relevant Academic Papers
+   ↓
+Text Processing
+   ↓
+OpenAI
+   ↓
+Summaries / Keywords / Q&A
+   ↓
+User
+
+The Semantic Scholar API is responsible for discovering relevant academic papers, while OpenAI processes the retrieved content to generate concise summaries and research insights.
+--------------------------------------------------------------------------------------
 ## Project Structure
 
 ```
@@ -43,7 +68,7 @@ ScholarAI/
 └── README.md
 ```
 
----
+------------------------------------------------------------------------------------------------
 
 ## Quick Start
 
@@ -85,7 +110,7 @@ cp .env.example .env
 python -m app.main
 ```
 
----
+-----------------------------------------------------------------------------------------------
 
 ## Running Tests
 
@@ -105,7 +130,7 @@ pytest tests/ -v
 pytest tests/ -v --cov=app --cov-report=term-missing
 ```
 
----
+---------------------------------------------------------------------------------------------
 
 ## Configuration Reference
 
@@ -118,7 +143,7 @@ pytest tests/ -v --cov=app --cov-report=term-missing
 | `DEBUG` | `false` | Verbose debug logging |
 | `LOG_LEVEL` | `INFO` | Logging level |
 
----
+----------------------------------------------------------------------------------------------
 
 ## Contributing
 
