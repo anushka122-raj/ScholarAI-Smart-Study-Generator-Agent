@@ -344,13 +344,13 @@ flowchart LR
 ```mermaid
 flowchart TD
 
-    TECH["🧠 ScholarAI Technology Stack"]
+    TECH["ScholarAI Technology Stack"]
 
-    PY["🐍 Python<br/>Core Application"]
-    OPEN["🤖 OpenAI<br/>AI Processing"]
-    SEM["📚 Semantic Scholar<br/>Paper Discovery"]
-    TEST["🧪 Pytest<br/>Testing"]
-    ENV["🔐 Environment Variables<br/>Configuration"]
+    PY["Python - Core Application"]
+    OPEN["OpenAI - AI Processing"]
+    SEM["Semantic Scholar - Paper Discovery"]
+    TEST["Pytest - Testing"]
+    ENV["Environment Variables - Configuration"]
 
     TECH --> PY
     TECH --> OPEN
@@ -361,8 +361,8 @@ flowchart TD
     classDef root fill:#E1BEE7,stroke:#8E24AA,stroke-width:3px,color:#222;
     classDef tech fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#222;
 
-    c
-```
+    class TECH root;
+    class PY,OPEN,SEM,TEST,ENV tech;
 
 
 ----------------------------------------------------------------------------------------------
