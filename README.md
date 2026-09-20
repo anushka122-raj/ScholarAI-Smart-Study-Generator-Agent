@@ -343,7 +343,6 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-
     TECH["ScholarAI Technology Stack"]
 
     PY["Python - Core Application"]
@@ -357,6 +356,7 @@ flowchart TD
     TECH --> SEM
     TECH --> TEST
     TECH --> ENV
+```
 
 
 ----------------------------------------------------------------------------------------------
