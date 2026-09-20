@@ -358,12 +358,6 @@ flowchart TD
     TECH --> TEST
     TECH --> ENV
 
-    classDef root fill:#E1BEE7,stroke:#8E24AA,stroke-width:3px,color:#222;
-    classDef tech fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#222;
-
-    class TECH root;
-    class PY,OPEN,SEM,TEST,ENV tech;
-
 
 ----------------------------------------------------------------------------------------------
 
